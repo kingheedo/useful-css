@@ -1,0 +1,19 @@
+.auto-grid-overflow {
+  display: grid;
+  grid-auto-rows: 30%;
+  grid-auto-flow: row;
+  gap: 1rem;
+  width: min(60rem, 100% - 4rem);
+  padding: 1rem;
+  margin-inline: auto;
+  overflow-y: auto;
+  outline: 5px solid hotpink;
+  scroll-snap-type: y mandatory;
+  scroll-padding: 1rem;
+
+  .item {
+    padding: 1rem;
+    background: darkcyan;
+    scroll-snap-align: start;
+  }
+}

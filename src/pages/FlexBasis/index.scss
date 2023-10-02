@@ -1,0 +1,20 @@
+.wrapper {
+  .flex-container {
+    display: flex;
+    gap: 1rem;
+    width: 500px;
+    height: 500px;
+
+    .flex-item {
+      flex-basis: 150px;
+      padding: 1rem;
+      background: orangered;
+    }
+  }
+
+  @media (width <=600px) {
+    .flex-container {
+      flex-direction: column;
+    }
+  }
+}

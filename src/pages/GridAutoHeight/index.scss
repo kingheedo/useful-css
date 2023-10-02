@@ -1,0 +1,27 @@
+.accordion-pannel {
+  padding: 1rem;
+  margin: 1rem;
+  cursor: pointer;
+  background-color: beige;
+  border-radius: 0.5rem;
+
+  .accordion-title {
+    margin: 0.5rem 0;
+  }
+
+  .accordion-content {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.5s;
+  }
+
+  .accordion-content > div {
+    overflow: hidden;
+  }
+
+  &.expanded {
+    .accordion-content {
+      grid-template-rows: 1fr;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.auto-grid-wrap {
+  --min-column-size: 10rem;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(var(--min-column-size), 100%), 1fr));
+  gap: 1rem;
+  width: min(60rem, 100% - 4rem);
+  padding: 1rem;
+  margin-inline: auto;
+  outline: 5px solid hotpink;
+
+  .item {
+    padding: 1rem;
+    background: darkcyan;
+  }
+}

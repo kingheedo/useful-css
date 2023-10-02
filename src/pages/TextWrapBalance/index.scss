@@ -1,0 +1,31 @@
+.text-wrap-balance {
+  width: min(70ch, 100% - 4rem);
+  margin-inline: auto;
+
+  > h2 {
+    font-size: 22px;
+    font-weight: 600;
+    text-wrap: balance;
+  }
+
+  > p {
+    margin-top: 20px;
+    text-wrap: balance;
+  }
+}
+
+@media (width <= 600px) {
+  .text-wrap-balance {
+    > h2 {
+      font-size: 16px;
+    }
+  }
+}
+
+@media (width <= 300px) {
+  .text-wrap-balance {
+    > h2 {
+      font-size: 12px;
+    }
+  }
+}
