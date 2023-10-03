@@ -1,0 +1,10 @@
+.bg-image-grid {
+  width: min(768px, 100% - 4rem);
+  margin-inline: auto;
+  text-align: center;
+
+  [class*="bg-"] {
+    background: url("https://assets.codepen.io/308367/home-gym.jpg");
+    background-size: cover;
+  }
+}

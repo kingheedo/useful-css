@@ -1,0 +1,22 @@
+.multi-bg-image {
+  width: min(768px, 100% - 4rem);
+  margin-inline: auto;
+  text-align: center;
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .bg-image {
+    display: inline-block;
+    padding: 20em;
+    background-image: url("https://assets.codepen.io/308367/house.jpg"),
+      url("https://assets.codepen.io/308367/f47b1-bandeirinha-azul-e-branca-png.png");
+    background-repeat: no-repeat, repeat;
+    background-position:
+      right -20% bottom 0,
+      top left;
+    background-size: auto 10%;
+    outline: 2px solid black;
+  }
+}

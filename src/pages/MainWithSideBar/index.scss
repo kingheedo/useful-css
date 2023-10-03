@@ -1,0 +1,31 @@
+.main-with-sidebar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  align-items: start;
+  padding: 1rem;
+  outline: 5px solid hotpink;
+
+  p {
+    &:not(:last-of-type) {
+      margin-bottom: 10px;
+    }
+  }
+
+  main {
+    flex-basis: 500px;
+    flex-grow: 9999;
+    background: cornflowerblue;
+
+    h2 {
+      font-size: 24px;
+      font-weight: 600;
+    }
+  }
+
+  aside {
+    flex-basis: 200px;
+    flex-grow: 1;
+    background: cornflowerblue;
+  }
+}
